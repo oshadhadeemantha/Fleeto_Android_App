@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    tools:context="com.example.thilinidineshika.mapdirection.ItemListActivity">
+
+    <EditText
+        android:id="@+id/itemid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Item_ID"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:text=""
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textStyle="italic"
+        android:visibility="visible"
+        tools:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Delete"
+        android:textColorLink="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp" />
+
+
+
+
+</LinearLayout>

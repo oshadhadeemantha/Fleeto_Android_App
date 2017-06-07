@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thilinidineshika.mapdirection.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/username"/>
+
+
+    <EditText
+        android:id="@+id/etuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:text=""
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:visibility="visible" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/password"/>
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button3"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:text=""
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/blog"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="30dp"
+        android:text="Login" />
+
+
+</LinearLayout>
